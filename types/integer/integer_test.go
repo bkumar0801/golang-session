@@ -10,5 +10,9 @@ func TestWhichIsBetter(t *testing.T) {
 }
 
 func TestWhatIsExpected(t *testing.T) {
-	assert.Equal(t, 20, WhatIsExpected(6754))
+	assert.Equal(t, uint8(98), WhatIsExpected(6754))
+}
+
+func TestUpCast(t *testing.T) {
+	assert.Equal(t, 10, UpCast(10))
 }

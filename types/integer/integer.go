@@ -18,7 +18,13 @@ func WhichIsBetter()   {
 }
 
 func WhatIsExpected(value int) uint8 {
-	var a uint8 = uint8(value);
+	var a uint8 = uint8(value)
+	fmt.Println("a ", a)
+	return a
+}
+
+func UpCast(value uint8)  int {
+	var a int = int(value)
 	fmt.Println("a ", a)
 	return a;
 }
