@@ -8,13 +8,18 @@
 
 package integer
 
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
 func WhichIsBetter()   {
 	a := 20
 	var b uint8 = 20
 	fmt.Println("a ", a)
 	fmt.Println("b ", b)
+	fmt.Println("a ", unsafe.Sizeof(a))
+	fmt.Println("b ", unsafe.Sizeof(b))
 }
 
 func WhatIsExpected(value int) uint8 {
